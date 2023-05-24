@@ -64,7 +64,7 @@ exports.resetpassword = async (req, res) => {
       });
     }
 
-    //get user details
+    //get user details 
     const userDetails = await User.findOne({ token: token });
 
     //if no entry - invalid token
