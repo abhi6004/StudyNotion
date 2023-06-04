@@ -10,7 +10,7 @@ exports.createCourse = async (req, res) => {
     const { courseName, courseDescription, whatYouWillLearn, price, tag } =
       req.body;
 
-    //get thumbnail
+    //get thumbnail 
     const { thumbnail } = req.file.thumbnailImage;
 
     //validation
